@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List Project</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style type="text/css">
+        .tagBall{width:fit-content;height:fit-content;position:relative;background-color: red;}
+        .tag{display:block;position:absolute;left:0px;top:0px;color:#000;text-decoration:none;font-size:15px;font-weight:bold;}
+        .tag:hover{border:1px solid #666;}
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+    
+    <script src="js/cloudTag.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <section class="cover" id="home">
+            <div class="header">
+                <h1>CHRISTIAN <span>WEBSITE</span></h1>
+                <div class="nav">
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about-us">About Us</a></li>
+                        <li><a href="#work">Work</a></li>
+                        <li><a href="#info">Info</a></li>
+                    </ul>
+                    <button class="header-btn">Get Started</button>
+                </div>
+            </div>
+            <main class="cover-main">
+                <div class="cover-text">
+                    <div class="title">
+                        <h1>TO DO LIST</h1>
+                        <H1>PROJECT</H1>
+                    </div>
+                    <div class="desc">
+                        <p>Lorem ipsum dolor sit amet consectetur.</p>
+                        <p>Lorem ipsum dolor sit.</p>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+                    <button class="main-btn">Learn More</button>
+                </div>
+                <div class="cover-img">
+                    <img src="img/undraw_To_do_list_re_9nt7.png">
+                </div>
+            </main>
+        </section>
+
+        <section class="about-us" id="about-us">
+            <main class="about-main">
+                <main class="about-text">
+                    <div class="title">
+                        <h1>Hi, i'm Chsistian</h1>
+                        <h1>a <span>Frontend Dev</span></h1>
+                    </div>
+                    <div class="desc">
+                        <p>I'm a student from ISB Atma Luhur</p>
+                        <p>with no experience</p>
+                        <p>who wants to be a good Frontend Developer</p>
+                    </div>
+                    <button class="main-btn">Let's Talk</button>
+                </main>
+                <div class="about-img">
+                    <img src="img/undraw_static_assets_rpm6-removebg-preview.png" alt="">
+                </div>
+            </main>
+        </section>
+    </div>
+
+    <section class="work" id="work">
+        <header class="work-header">
+            <button><span class="iconify search-icon" data-icon="fa:search" data-flip="horizontal"></span></button>
+            <input type="search" placeholder="Search">
+        </header>
+
+        <main class="work-main">
+            <h1 class="title">Project</h1>
+            <div class="work-card">
+                <div class="todo card">
+                    <header class="card-header">
+                        <h1>To Do</h1>
+                        <div class="number">0</div>
+                    </header>
+                    <div class="add"><button class="new-todo">+</button></div>
+                </div>
+
+                <div class="inprogress card">
+                    <header class="card-header">
+                        <h1>In Progress</h1>
+                        <div class="number">0</div>
+                    </header>
+                    <div class="add"><button class="new-inprogress">+</button></div>
+                </div>
+
+                <div class="completed card">
+                    <header class="card-header">
+                        <h1>Completed</h1>
+                        <div class="number">0</div>
+                    </header>
+                    <div class="add"><button class="new-completed">+</button></div>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <section class="info" id="info">
+        <div class="title">
+            <h1>This is the technology</h1>
+            <h1>I use in this project</h1>
+        </div>
+        <div class="tagBall">
+            <a class="tag" target="_blank" href="#">HTML</a>
+            <a class="tag" target="_blank" href="#">CSS</a>
+            <a class="tag" target="_blank" href="#">Javascript</a>
+            <a class="tag" target="_blank" href="#">jQuery</a>
+            <a class="tag" target="_blank" href="#">CloudTag.js</a>
+            <a class="tag" target="_blank" href="#">HTML</a>
+            <a class="tag" target="_blank" href="#">CSS</a>
+            <a class="tag" target="_blank" href="#">javascript</a>
+            <a class="tag" target="_blank" href="#">jQuery</a>
+            <a class="tag" target="_blank" href="#">CloudTag.js</a>
+            <a class="tag" target="_blank" href="#">HTML</a>
+            <a class="tag" target="_blank" href="#">CSS</a>
+        </div>
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.iconify.design/2/2.1.0/iconify.min.js"></script>
+    <script src="js/cloudTag.js"></script>
+    <script src="js/script.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.tagBall').cloudTag({
+                ballSize: 100 // the size of the tag cloud ball
+            });
+        });
+    </script>
+
+</body>
+
+</html>
